@@ -72,6 +72,7 @@ This section contains an alphabetical list of Microsoft Media Foundation attribu
 | [MF\_CAPTURE\_METADATA\_FRAME\_ILLUMINATION](mf-capture-metadata-frame-illumination.md) | A value indicating whether a frame was captured using active infrared (IR) illumination. |
 | [MF\_CAPTURE\_METADATA\_PHOTO\_FRAME\_FLASH](mf-capture-metadata-photo-frame-flash.md) | Indicates if a flash was triggered for the captured frame. |
 | [MF\_DEVICE\_THERMAL\_STATE\_CHANGED](mf-device-thermal-state-changed.md) | Represents an event that signals a thermal state change in the device.  |
+| [MF\_DECODER\_FWD\_CUSTOM\_SEI\_DECODE\_ORDER](mf-decoder-fwd-custom-set-decode-order.md) | Specifies that the SEI unit type to forward on output samples of the decoder shall be sent out in decode order. |
 | [MF\_DEVICESTREAM\_ATTRIBUTE\_FRAMESOURCE\_TYPES](mf-devicestream-attribute-framesource-types.md) | Represents the frame source type. |
 | [MF\_DEVICESTREAM\_EXTENSION\_PLUGIN\_CONNECTION\_POINT](mf-devicestream-extension-plugin-connection-point.md) | Represents a extension plugin connection point. |
 | [MF\_DEVICESTREAM\_EXTENSION\_PLUGIN\_CLSID](mf-devicestream-extension-plugin-clsid.md) | Specifies the CLSID of a post-processing plug-in for a video capture device. |
@@ -145,6 +146,9 @@ This section contains an alphabetical list of Microsoft Media Foundation attribu
 | [MF\_MP2DLNA\_STATISTICS](mf-mp2dlna-statistics.md) | Gets statistics from the DLNA media sink. |
 | [MF\_MP2DLNA\_USE\_MMCSS](mf-mp2dlna-use-mmcss.md) | Specifies whether the DLNA media sink uses the Multimedia Class Scheduler Service (MMCSS) |
 | [MF\_MP2DLNA\_VIDEO\_BIT\_RATE](mf-mp2dlna-video-bit-rate.md) | Specifies the maximum video bit rate for the DLNA media sink. |
+| [MF\_MPEG4SINK\_MAX\_CODED\_SEQUENCES\_PER\_FRAGMENT](mf-mpeg4sink-minimum-properties-size.md) | Specifies the maximum number of coded sequences which the MPEG4 sink will place in each fragment when operating in fragmented mode. |
+| [MF\_MPEG4SINK\_MIN\_FRAGMENT\_DURATION](mf-mpeg4sink-min-fragment-duration.md) | Specifies the minimum duration in hns of each fragment which the MPEG4 sink produces when operating in fragmented mode. |
+| [MF\_MPEG4SINK\_MINIMUM\_PROPERTIES\_SIZE](mf-mpeg4sink-minimum-properties-size.md) | Tells the MPEG-4 MediaSink how much space to reserve in the MP4 file format header for metadata properties. |
 | [MF\_MPEG4SINK\_MOOV\_BEFORE\_MDAT](mf-mpeg4sink-moov-before-mdat.md) | Indicates that 'moov' will be written before 'mdat' box in the generated file. |
 | [MF\_MPEG4SINK\_SPSPPS\_PASSTHROUGH](mf-mpeg4sink-spspps-passthrough.md) | Specifies whether the [**MPEG-4 File Sink**](mpeg-4-file-sink.md) filters out sequence parameter set (SPS) and picture parameter set (PPS) NALUs. |
 | [MF\_MSE\_ACTIVELIST\_CALLBACK](mf-mse-activelist-callback.md) | Contains a pointer to the application's callback interface for the [**IMFBufferListNotify**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfbufferlistnotify) interface for the active buffer list. |
@@ -430,6 +434,7 @@ This section contains an alphabetical list of Microsoft Media Foundation attribu
 | [MF\_TRANSFORM\_CATEGORY\_Attribute](mf-transform-category-attribute.md) | Specifies the category for a Media Foundation transform (MFT). |
 | [MF\_TRANSFORM\_FLAGS\_Attribute](mf-transform-flags-attribute.md) | Contains flags for a Media Foundation transform (MFT) activation object. |
 | [MF\_USER\_DATA\_PAYLOAD](mf-user-data-payload.md) | Sets whether to include a user data payload with the output sample. |
+| [MF\_VIDEO\_RENDERER\_EFFECT\_APP\_SERVICE\_NAME](mf-video-renderer-effect-app-service-name.md) | Specifies the name of the video renderer effect app service with which a communication channel will be opened. |
 | [MF\_VIDEO\_MAX\_MB\_PER\_SEC](mf-video-max-mb-per-sec.md) | Specifies, on [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform), the maximum macroblock processing rate, in macroblocks per second, that is supported by the hardware encoder. |
 | [MF\_VIDEO\_PROCESSOR\_ALGORITHM](mf-video-processor-algorithm.md) | Sets the algorithm used by the video processor.  |
 | [MF\_VIDEODSP\_MODE](mf-videodsp-mode.md) | Sets the processing mode of the [**Video Stabilization MFT**](video-stabilization-mft.md). |
@@ -438,6 +443,7 @@ This section contains an alphabetical list of Microsoft Media Foundation attribu
 | [MF\_VIRTUALCAMERA\_PROVIDE\_ASSOCIATED\_CAMERA\_SOURCES](mf-virtualcamera-provide-associated-camera-sources.md) | Specifies that the pipeline should provide the list of physical camera sources associated with a virtual camera. |
 | [MF\_XVP\_CALLER\_ALLOCATES\_OUTPUT](mf-xvp-caller-allocates-output.md) | Specifies whether that the caller will allocate the textures used for output. |
 | [MF\_XVP\_DISABLE\_FRC](mf-xvp-disable-frc.md) | Disables frame-rate conversion in the [**Video Processor MFT**](video-processor-mft.md). |
+| [MF\_XVP\_SAMPLE\_LOCK\_TIMEOUT](mf-xvp-sample-lock-timeout.md) | Specifies the timeout value used for sample locking operations in XVP. |
 | [MFASFSPLITTER\_PACKET\_BOUNDARY](mfasfsplitter-packet-boundary-attribute.md) | Specifies whether a buffer contains the start of an Advanced Systems Format (ASF) packet.  |
 | [MFPROTECTION\_ACP](mfprotection-acp.md) | Specifies Analog Copy Protection (ACP) protection. |
 | [MFPROTECTION\_CGMSA](mfprotection-cgmsa.md) | Specifies Copy Generational Management System - A (CGMS-A) protection.  |
@@ -495,6 +501,8 @@ This section contains an alphabetical list of Microsoft Media Foundation attribu
 | [MFSampleExtension\_Token](mfsampleextension-token-attribute.md) | Contains a pointer to the token that was provided to the [**IMFMediaStream::RequestSample**](/windows/desktop/api/mfidl/nf-mfidl-imfmediastream-requestsample) method.  |
 | [MFSampleExtension\_VideoDSPMode](mfsampleextension-videodspmode.md) | Indicates whether video stabilization was applied to a video frame. |
 | [MFSampleExtension\_VideoEncodeBitsUsedMap](mfsampleextension-videoencodebitsusedmap.md) | Stores a map of the number of bits used for encoding each block in an encoded video frame. |
+| [MFSampleExtension\_VideoEncodeInputAbsoluteQPMap](mfsampleextension-videoencodeinputabsoluteqpmap.md) | Stores a map of the absolute Quantization Parameter (QP) values provided as input to the encoder MFT.  |
+| [MFSampleExtension\_VideoEncodeInputDeltaQPMap](mfsampleextension-videoencodeinputdeltaqpmap.md) | Stores a map of the delta Quantization Parameter (QP) values provided as input to the encoder MFT. |
 | [MFSampleExtension\_VideoEncodePictureType](mfsampleextension-videoencodepicturetype.md) | Specifies the type of picture that is output by a video encoder. |
 | [MFSampleExtension\_VideoEncodeQP](mfsampleextension-videoencodeqp.md) | Specifies the quantization parameter (QP) that was used to encode a video sample. |
 | [MFSampleExtension\_VideoEncodeQPMap](mfsampleextension-videoencodeqpmap.md) | Stores a map of the Quantization Parameter (QP) values used for each block in an encoded video frame. |
